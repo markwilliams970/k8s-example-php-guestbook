@@ -18,7 +18,7 @@ message = browser.find_element(By.NAME, "input")
 # Locate submit button
 submit_button = browser.find_element(By.XPATH, '//button[normalize-space()="Submit"]')
 
-# Read input data and submit to the webform
+# Read input data from csv file and submit to the webform
 with (open('submit-data.csv', newline='')) as csvfile:
   reader = csv.DictReader(csvfile)
   for row in reader:
